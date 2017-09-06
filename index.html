@@ -51,7 +51,7 @@
         background-image: url('../topo.svg');
       }
 
-      #hero .scrollplz {
+      #hero .scrollmore {
         font-weight: 500;
         letter-spacing: .2em;
         font-family: 'Open sans', sans-serif;
@@ -64,22 +64,41 @@
 
       #hero h1 {
         font-family: 'vidaloka', sans-serif;
-        font-size: 8rem;
         text-transform: lowercase;
         letter-spacing: 0;
         font-weight: 500;
       }
 
+      @media screen and (min-width: 768px) {
+        #hero h1 {
+          font-size: 6rem;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        #hero h1 {
+          font-size: 8rem;
+        }
+      }
+
       #hero p.byline {
         font-family: 'Open Sans', sans-serif;
         text-transform: uppercase;
-        letter-spacing: 1.2em
+        letter-spacing: .2em;
+      }
+
+      @media screen and (min-width: 1024px) {
+        #hero p.byline {
+          font-size: 1.875rem;
+        }
       }
 
       p {
         margin-left: auto;
         margin-right: auto;
         display: block;
+        font-size: 1.2em;
+        max-width: 45em;
       }
 
       .card-tile {
@@ -107,7 +126,7 @@
         <h1>matt &amp; alex</h1>
         <p class="byline">ARE GETTING MARRIED</p>
       </div>
-      <div class="scrollplz">
+      <div class="scrollmore">
       <p>SCROLL FOR MORE</p>
         <svg id="scrollplz-arrow" height="50px" viewbox="0 0 5 27" stroke="none" fill="currentColor">
           <rect x="2" y="0" width="1" height="23"></rect>
