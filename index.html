@@ -259,18 +259,19 @@
 
   <!-- Scripts -->
   <script>
-  $(document).ready(function () {
-
+$(document).ready(function () {
     $('#easterEgg').hide();
     var Konami = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
     var i = 0;
     $(document).keydown(function (e) {
         e.preventDefault();
         if (e.keyCode == Konami[i]) {
-          i++;
           if (i == 9) {
+            i = 0;
             $('#easterEgg').toggle();
           }
+
+          i++;
         }
       });
   });
@@ -312,7 +313,7 @@
       72201
       </p>
       <p id="easterEgg">
-        "Join us for the coolest party Little Rock has ever seen!"
+        "John you suck!"
       </p>
     </div>
   </div>
