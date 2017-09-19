@@ -28,9 +28,8 @@
 
 
   <!-- Slick -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
   <!-- Embedded CSS -->
   <style type="text/css">
     <!-- body {
@@ -299,9 +298,15 @@
   <script>
 $(document).ready(function () {
 
-    $('.picSlick').slick({
-        autoplaySpeed: 3000,
-      });
+    $('.slider').slick({
+              autoplay: true,
+              autoplaySpeed: 3000,
+              dots: true,
+              infinite: true,
+              centerMode: true,
+              arrows: false,
+              variableWidth: false
+            });
 
     $('#easterEgg').hide();
     var Konami = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66];
@@ -343,15 +348,15 @@ $(document).ready(function () {
     </div>
   </div>
   <div class="picPane">
-    <div class="picSlick">
-      <div class="pic1">
-        <img src="alexmatt50.jpg"/>
+    <div class="slider">
+      <div>
+        <img src="../alexmatt50.jpg"/>
       </div>
-      <div class="pic2">
-        <img src="alexmatt05.jpg"/>
+      <div>
+        <img src="../alexmatt05.jpg"/>
       </div>
-      <div class="pic3">
-        <img src="alexmatt41.jpg"/>
+      <div>
+        <img src="../alexmatt41.jpg"/>
       </div>
     </div>
   </div>
