@@ -15,6 +15,7 @@
 
   <!-- Slick -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -53,8 +54,19 @@
       max-width: 100%;
     }
 
-    .picLarge {
+    .pic1 {
       max-width: 100%;
+      background-image: url("alexmatt05.jpg");
+    }
+
+    .pic2 {
+      max-width: 100%;
+      background-image: url("alexmatt41.jpg");
+    }
+
+    .pic3 {
+      max-width: 100%;
+      background-image: url("alexmatt50.jpg");
     }
 
     .pane {
@@ -332,14 +344,14 @@ $(document).ready(function () {
   </div>
   <div class="picPane">
     <div class="picSlick">
-      <div>
-        <img class="picLarge" src="alex-matt.com/alexmatt41.jpg" />
+      <div class="pic1">
+        <img src="alexmatt50.jpg"/>
       </div>
-      <div>
-        <img class="picLarge" src="alex-matt.com//alexmatt05.jpg" />
+      <div class="pic2">
+        <img src="alexmatt05.jpg"/>
       </div>
-      <div>
-        <img class="picLarge" src="alex-matt.com//alexmatt50.jpg" />
+      <div class="pic3">
+        <img src="alexmatt41.jpg"/>
       </div>
     </div>
   </div>
@@ -362,9 +374,6 @@ $(document).ready(function () {
       </p>
     </div>
   </div>
-
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-
 </body>
 
 </html>
