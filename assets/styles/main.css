@@ -55,7 +55,7 @@ img {
   border-left: none;
   border-right: none;
 }
-#destination .library-image {
+.library-image {
   max-width: 350px;
 }
 #location .underline {
