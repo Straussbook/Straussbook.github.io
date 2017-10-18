@@ -27,7 +27,32 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
   <!-- My Own Stuff -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="../assets/scripts/main.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('.slider').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    })
+    $('#easterEgg').hide()
+    var Konami = [38, 38, 40, 40, 37, 39, 37, 39, 65, 66]
+    var i = 0
+    $(document).keydown(function (e) {
+      e.preventDefault()
+      if (e.keyCode === Konami[i]) {
+        if (i === 9) {
+          i = 0
+          $('#easterEgg').toggle()
+          var audio = new Audio('../Zelda.mp3')
+          audio.play()
+        }
+        i++
+      }
+    })
+  })
+  </script>
   <link href="../assets/styles/main.css" rel="stylesheet" />
 </head>
 <body>
@@ -55,7 +80,7 @@
         <h2>VENUE</h2>
         <span class="underline"></span>
       </div>
-      <img class="library-image round" src="../lights.jpg" />
+      <img class="library-image round" src="../assets/images/lights.jpg" />
       <p style="line-height: 1.2;">
       Great Hall <br />
       WILLIAM J. CLINTON PRESIDENTIAL LIBRARY <br>
@@ -74,7 +99,7 @@
         <h2>REGISTRATION</h2>
         <span class="underline"></span>
       </div>
-      <img class="library-image" src="../Amazon.svg" />
+      <img class="library-image" src="../assets/images/Amazon.svg" />
     </div>
   </div>
 </body>
