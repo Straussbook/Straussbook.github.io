@@ -86,13 +86,29 @@
         <h2>ENGAGEMENT</h2>
         <span class="underline"></span>
       </div>
+      <div class="container">
+        <div class="photo-grid">
+          <a href="../assets/images/alexmatt01.JPG"><img src="../assets/images/alexmatt01.JPG" /></a>
+          <a href="../assets/images/alexmatt05.JPG"><img src="../assets/images/alexmatt05.JPG" /></a>
+          <a href="../assets/images/alexmatt32.JPG"><img src="../assets/images/alexmatt32.JPG" /></a>
+          <a href="../assets/images/alexmatt41.JPG"><img src="../assets/images/alexmatt41.JPG" /></a>
+          <a href="../assets/images/alexmatt43.JPG"><img src="../assets/images/alexmatt43.JPG" /></a>
+          <a href="../assets/images/alexmatt44.JPG"><img src="../assets/images/alexmatt44.JPG" /></a>
+          <a href="../assets/images/alexmatt50.JPG"><img src="../assets/images/alexmatt50.JPG" /></a>
+          <a href="../assets/images/alexmatt51.JPG"><img src="../assets/images/alexmatt51.JPG" /></a>
+        </div>
+      </div>
+      
     </div>
   </div>
 
   <script src="magnific-popup/jquery.magnific-popup.js"></script>
   <script>
   $(document).ready(function() {
-    $('.image-link').magnificPopup({type:'image'});
+    $('.photo-grid').magnificPopup({
+      delegate: 'a',
+      type:'image'
+    });
   });
   </script>
 </body>
